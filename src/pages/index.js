@@ -19,13 +19,6 @@ import Head from "next/head";
 export default function IndexPage({ data }) {
   return (
     <Layout logo={logo}>
-      <Head>
-        <script
-          src="https://kit.fontawesome.com/6f06d95fd6.js"
-          crossorigin="anonymous"
-          async
-        ></script>
-      </Head>
       <Hero me={me} />
       <About me2={me2} me={me} />
       <Services />

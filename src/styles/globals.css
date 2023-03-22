@@ -2,33 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.marquee {
-  overflow: hidden;
-  width: 1190px;
-}
-
-.marquee__inner {
-  display: flex;
-  list-style: none;
-  animation: scrolling 10s linear infinite;
-}
-
-.marquee span {
-  flex-shrink: 0;
-  width: 150px;
-  text-align: center;
-  margin-right: 20px;
-}
-
-@keyframes scrolling {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1190px);
-  }
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 body {
@@ -51,6 +24,12 @@ code {
 }
 .app {
   max-width: 1275px;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .my-container {
@@ -200,13 +179,14 @@ nav {
   transform: translate(104%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   opacity: 1 !important;
+  font-family: Bebas Neue;
 }
 
 #menu li {
   padding: 10px 0;
   transition-delay: 2s;
   color: white;
-  font-family: "Bebas Neue";
+
   font-size: 24px;
 }
 
@@ -246,18 +226,21 @@ nav {
   display: block;
 }
 
-.scrollArrow {
-  animation: bounce 1.5s infinite;
+.about li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+}
+.about li:before {
+  content: "★";
+  font-size: 18px;
+  position: absolute;
+  left: -10px;
+  color: #6365f1;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(25%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+.portfolio li:before {
+  content: "\2022";
+  color: #6365f1;
+  margin-right: 8px;
 }

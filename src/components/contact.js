@@ -17,7 +17,7 @@ function Contact() {
       </p>
       <a href="mailto:mikewhite628@gmail.com">
         <button
-          className="bg-indigo-500 py-2 px-4 rounded shadow w-42 mt-6 mx-auto hover:bg-indigo-600 hover:-translate-y-1 
+          className="bg-indigo-500 py-2 px-4 rounded shadow w-42 mt-6 mx-auto hover:bg-indigo-600 
       hover:scale-110 duration-300"
         >
           {"Say Hello"}

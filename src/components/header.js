@@ -6,26 +6,22 @@ import Link from "next/link";
 
 export const Header = ({ logo }) => {
   const isMobile = useMobile();
-  const [lastScroll, setLastScroll] = useState(0);
-  const [scrollDown, setScrollDown] = useState(true);
-
-  console.log(logo);
 
   return !isMobile ? (
     <div
-      className={`bg-zinc-800 opacity-90  text-white fixed w-screen h-16 z-50 items-center
-      ${scrollDown ? "hideNav" : "showNav"}`}
+      className={`bg-zinc-800 opacity-90  text-white fixed w-screen h-14 z-50 items-center showNav`}
     >
-      <div className="flex justify-between items-center mt-3">
+      <div className="flex justify-between items-center ">
         <Link href="/" className="self-center">
           <Image
             src={logo}
             alt="logo"
-            style={{ maxWidth: "40px", maxHeight: "40px" }}
+            height={40}
+            width={40}
             className="ml-12 self-center"
           />
         </Link>
-        <ul className="flex flex-row navbar pr-24 h-12 items-center justify-end font-bebas text-2xl tracking-wide">
+        <ul className="flex flex-row navbar pr-24 h-12 items-center justify-end font-bebas text-lg tracking-wide">
           <li className="mr-6 font-bold ">
             <Link href="/" className="hover:text-indigo-500  text-white">
               Home
@@ -76,7 +72,7 @@ export const Header = ({ logo }) => {
             src={logo}
             alt="logo"
             style={{ maxWidth: "40px", maxHeight: "40px" }}
-            className="ml-12 self-center"
+            className="ml-3 self-center"
           />
         </Link>
         <div id="menuToggle" className="mr-12">
@@ -86,17 +82,22 @@ export const Header = ({ logo }) => {
           <span></span>
           <ul id="menu" className="opacity-100 ml-12 ">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" className="hover:text-indigo-500 font-bebas">
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="/#about" className="hover:text-indigo-500 text-white">
+              <Link
+                href="/#about"
+                className="hover:text-indigo-500 text-white font-bebas"
+              >
                 About
               </Link>
             </li>
             <li>
               <Link
                 href="/#services"
-                className="hover:text-indigo-500 text-white"
+                className="hover:text-indigo-500 text-white font-bebas"
               >
                 Services
               </Link>
@@ -104,7 +105,7 @@ export const Header = ({ logo }) => {
             <li>
               <Link
                 href="/#portfolio"
-                className="hover:text-indigo-500 text-white"
+                className="hover:text-indigo-500 text-white font-bebas"
               >
                 Portfolio
               </Link>
@@ -112,7 +113,7 @@ export const Header = ({ logo }) => {
             <li>
               <Link
                 href="/#contact"
-                className="hover:text-indigo-500 text-white"
+                className="hover:text-indigo-500 text-white font-bebas"
               >
                 Contact
               </Link>

@@ -1,6 +1,7 @@
 import React from "react";
 import useMobile from "./mobile";
 import Image from "next/image";
+import Link from "next/link";
 
 function Portfolio({ projectOne, projectTwo, projectThree }) {
   const isMobile = useMobile();
@@ -9,7 +10,7 @@ function Portfolio({ projectOne, projectTwo, projectThree }) {
       <h1
         data-aos="fade-up"
         data-aos-duration="500"
-        className="text-white text-center mb-6 font-bebas text-5xl drop-shadow-xl"
+        className="text-white text-center mb-12 font-bebas text-5xl drop-shadow-xl"
       >
         Portfolio
       </h1>
@@ -19,20 +20,20 @@ function Portfolio({ projectOne, projectTwo, projectThree }) {
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          <div className="text-white lg:bg-transparent bg-main z-10 opacity-90 w-96">
-            <h2 className="text-indigo-500 ml-6 text-xl">
+          <div className="text-white  z-10 w-96">
+            <h2 className="text-indigo-500 ml-6 text-xl mt-3">
               {`Personal Fitness Made Easy`}
             </h2>
-            <h1 className="text-3xl mb-3 ml-6 font-bold">
+            <h3 className="text-3xl mb-3 ml-6 font-bold">
               {"AI Fitness Trainer "}
-            </h1>
-            <div className="bg-main opacity-95 lg:shadow-xl  p-6 text-sm">
+            </h3>
+            <div className="bg-main opacity-95 lg:shadow-xl  p-6 text-md mb-3">
               <p className="mb-3">
                 {
                   "A Personal trainer powered by ChatGPT's powerfull AI. With the AI Trainer you can"
                 }
               </p>
-              <ul>
+              <ul className="portfolio">
                 <li>{`Track workouts and personal records`}</li>
                 <li> {`chat with the AI trainer 24/7`}</li>
                 <li> {`get detailed workout advice`}</li>
@@ -43,18 +44,18 @@ function Portfolio({ projectOne, projectTwo, projectThree }) {
                 </li>
               </ul>
 
-              <p className="">Next Js + MongoDB + ChatGPT API</p>
+              <p className="mt-2 text-lg">
+                {`Next Js`} <span className="text-indigo-500">{`+`}</span>{" "}
+                {`MongoDB `}
+                <span className="text-indigo-500">+</span>
+                {` ChatGPT API`}
+              </p>
             </div>
-            <a href="https://www.aifitnesstrainer.io">
-              <button className="py-2 px-4 ml-6 my-6 border border-indigo-500 shadow-md hover:bg-zinc-800 shadow-black">
+            <Link href="https://www.aifitnesstrainer.io" target="_blank">
+              <button className="bg-indigo-500 py-2 px-4 rounded shadow hover:bg-indigo-700 hover:scale-105 duration-300  w-2/3 flex items-center justify-center mx-auto">
                 View Site
-                <i
-                  className="faShareSquare ml-3"
-                  size="lg"
-                  style={{ color: "#6365f1" }}
-                ></i>
               </button>
-            </a>
+            </Link>
           </div>
           <div
             className="relative  
@@ -74,37 +75,42 @@ function Portfolio({ projectOne, projectTwo, projectThree }) {
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          <div className="text-white lg:bg-transparent bg-main z-10 opacity-90 w-96">
-            <h2 className="text-indigo-500 ml-6 text-xl">
+          <div className="text-white  z-10 w-96">
+            <h2 className="text-indigo-500 ml-6 text-xl mt-3">
               {`Improve Your Game`}
             </h2>
-            <h1 className="text-3xl mb-3 ml-6 font-bold">
+            <h3 className="text-3xl mb-3 ml-6 font-bold">
               {"LoL Skill Check "}
-            </h1>
-            <div className="bg-main opacity-95 lg:shadow-xl  p-6 text-sm">
+            </h3>
+            <div className="bg-main opacity-95 lg:shadow-xl  p-6 text-md mb-3">
               <p className="mb-3">
-                {`This website is a powerful tool for avid League of Legends
+                {`A powerful tool for avid League of Legends
                 players, providing personalized game analysis and performance
-                insights. By analyzing your most recent League of Legends match,
-                the platform delivers a comprehensive game summary and
-                individual stats tailored just for you. The site uses advanced
-                algorithms to generate a detailed report, highlighting your
-                strengths and areas for improvement, allowing you to fine-tune
-                your gameplay strategy and enhance your overall performance on
-                the Rift.`}
+                insights. 
+                `}
               </p>
-              <p className="">Svelte + Express + Riot Games API</p>
+              <ul className="portfolio mb-3">
+                <li>{`View a comprehensive game summary`} </li>
+                <li>
+                  {`Get individual stats tailored just for the player searched`}
+                </li>
+                <li>
+                  {`Highlights your strengths and areas for improvement,
+                  allowing you to fine-tune your gameplay strategy.`}
+                </li>
+              </ul>
+
+              <p className="text-lg">
+                {`Svelte`} <span className="text-indigo-500">+</span>
+                {` Express `}
+                <span className="text-indigo-500">+</span> {`Riot Games API`}
+              </p>
             </div>
-            <a href="https://www.lolskillcheck.com">
-              <button className="py-2 px-4 ml-6 my-6 border border-indigo-500 shadow-md hover:bg-zinc-800 shadow-black">
+            <Link href="https://www.lolskillcheck.com" target="_blank">
+              <button className="bg-indigo-500 py-2 px-4 rounded shadow hover:bg-indigo-700 hover:scale-105 duration-300  w-2/3 flex items-center justify-center mx-auto">
                 View Site
-                <i
-                  className="faShareSquare ml-3"
-                  size="lg"
-                  style={{ color: "#6365f1" }}
-                ></i>
               </button>
-            </a>
+            </Link>
           </div>
           <div
             className="relative  
@@ -124,35 +130,27 @@ function Portfolio({ projectOne, projectTwo, projectThree }) {
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          <div className="text-white lg:bg-transparent bg-main z-10 opacity-90 w-96">
-            <h2 className="text-indigo-500 ml-6 text-xl">
+          <div className="text-white  z-10 w-96">
+            <h2 className="text-indigo-500 ml-6 text-xl mt-3">
               {`Skip The Nonsense`}
             </h2>
-            <h1 className="text-3xl mb-3 ml-6 font-bold">{"Camo To Code "}</h1>
-            <div className="bg-main opacity-95 lg:shadow-xl  p-6 text-sm">
+            <h3 className="text-3xl mb-3 ml-6 font-bold">{"Camo To Code "}</h3>
+            <div className="bg-main opacity-95 lg:shadow-xl p-6 text-md mb-3">
               <p className="mb-3">
-                {`As a United States Marine Corps veteran i wanted to provide the
+                {`As a United States Marine Corps veteran I wanted to provide the
                 best free learning resources available for veterans and
-                civilians interested in pursuing a career in tech. The platform
+                civilians interested in pursuing a career in tech.`}
+              </p>
+              <p className="">{`The platform
                 offers comprehensive training and mentorship programs, equipping
                 users with the necessary skills and knowledge to excel in
-                various tech-related fields. With a mission to bridge the gap
-                between military service and civilian employment, this website
-                provides a supportive community and career guidance for those
-                transitioning into the tech industry.`}
-              </p>
-              <p className="">Next Js</p>
+                various tech-related fields. `}</p>
             </div>
-            <a href="https://www.lolskillcheck.com">
-              <button className="py-2 px-4 ml-6 my-6 border border-indigo-500 shadow-md hover:bg-zinc-800 shadow-black">
+            <Link href="https://www.camotocode.com" target="_blank">
+              <button className="bg-indigo-500 py-2 px-4 rounded shadow hover:bg-indigo-700 hover:scale-105 duration-300  w-2/3 flex items-center justify-center mx-auto">
                 View Site
-                <i
-                  className="faShareSquare ml-3"
-                  size="lg"
-                  style={{ color: "#6365f1" }}
-                ></i>
               </button>
-            </a>
+            </Link>
           </div>
           <div
             className="relative  

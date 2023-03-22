@@ -32,15 +32,15 @@ export default function Hero({ me }) {
           </div>
           <Link href="/#about">
             <button
-              className="bg-indigo-500 py-2 px-4 rounded shadow hover:bg-indigo-600 hover:-translate-y-1 
-      hover:scale-110 duration-300"
+              className="bg-indigo-500 py-2 px-4 rounded shadow hover:bg-indigo-600 
+      hover:scale-110 duration-100"
             >
               About Me
             </button>
           </Link>
         </div>
 
-        <div className="my-auto border-4 me1 border-t-indigo-500 border-r-indigo-500 border-l-zinc-500 border-b-zinc-500 shadow-md shadow-black">
+        <div className="my-auto border-4 me1 border-t-indigo-500 border-r-indigo-500 border-l-zinc-500 border-b-zinc-500 shadow-zinc-800 shadow-md">
           <Image src={`/me2.webp`} alt="me" width={450} height={500} />
         </div>
       </div>
