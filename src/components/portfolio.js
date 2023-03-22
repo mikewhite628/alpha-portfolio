@@ -3,7 +3,7 @@ import useMobile from "./mobile";
 import Image from "next/image";
 import Link from "next/link";
 
-function Portfolio({ projectOne, projectTwo, projectThree }) {
+function Portfolio() {
   const isMobile = useMobile();
   return (
     <div id="portfolio" className="portfolio-section sm:mx-12  relative">
@@ -62,7 +62,7 @@ function Portfolio({ projectOne, projectTwo, projectThree }) {
           shadow-lg border-2 border-indigo-500 port-img"
           >
             <Image
-              src={projectOne}
+              src={`/ai-app.svg`}
               alt="AI Fitness Trainer"
               height={384}
               width={384}
@@ -117,7 +117,7 @@ function Portfolio({ projectOne, projectTwo, projectThree }) {
           shadow-lg border-2 border-indigo-500 port-img"
           >
             <Image
-              src={projectTwo}
+              src={`/league-app2.svg`}
               alt="LoL Skill Scheck"
               height={384}
               width={384}
@@ -157,7 +157,7 @@ function Portfolio({ projectOne, projectTwo, projectThree }) {
           shadow-lg border-2 border-indigo-500 port-img"
           >
             <Image
-              src={projectThree}
+              src={`/c2c-guy.svg`}
               alt="Camo To Code"
               height={384}
               width={384}
