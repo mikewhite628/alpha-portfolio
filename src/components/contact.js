@@ -11,9 +11,9 @@ function Contact() {
     >
       <h1 className="text-5xl font-bebas mb-6">Get In Touch</h1>
       <p className="sm:w-96 mx-auto text-lg">
-        Although I’m not currently looking for any new opportunities, my inbox
+        {`Although I’m not currently looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I’ll
-        try my best to get back to you!
+        try my best to get back to you!`}
       </p>
       <a href="mailto:mikewhite628@gmail.com">
         <button

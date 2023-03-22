@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import Layout from "../components/layout";
 import About from "../components/about";
@@ -14,7 +14,6 @@ import me2 from "../../public/me2.webp";
 import projectOne from "../../public/ai-app.svg";
 import projectTwo from "../../public/league-app2.svg";
 import projectThree from "../../public/c2c-guy.svg";
-import Head from "next/head";
 
 export default function IndexPage({ data }) {
   return (
