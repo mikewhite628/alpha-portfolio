@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faLinkedin,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faGithub,
+//   faTwitter,
+//   faLinkedin,
+//   faYoutube,
+// } from "@fortawesome/free-brands-svg-icons";
 
 function Socials() {
   return (
