@@ -73,6 +73,11 @@ h1 {
   display: none;
 }
 
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
 @media only screen and (max-width: 990px) {
   .me1 {
     display: none !important;

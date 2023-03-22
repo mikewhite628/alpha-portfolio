@@ -16,8 +16,7 @@ function Socials() {
           <FontAwesomeIcon
             icon={faGithub}
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300"
-            size="2x"
+      hover:scale-110 hover:text-indigo-500 duration-300 icon"
           />
         </Link>
 
@@ -26,7 +25,6 @@ function Socials() {
             icon={faYoutube}
             className="mb-3 hover:-translate-y-1
       hover:scale-110 hover:text-indigo-500 duration-300"
-            size="2x"
           />
         </Link>
         <Link href="https://twitter.com/Th3MichaelWhite" target="_blank">
@@ -34,7 +32,6 @@ function Socials() {
             icon={faTwitter}
             className="mb-3 hover:-translate-y-1
       hover:scale-110 hover:text-indigo-500 duration-300"
-            size="2x"
           />
         </Link>
         <Link
@@ -45,7 +42,6 @@ function Socials() {
             icon={faLinkedin}
             className="mb-3 hover:-translate-y-1
       hover:scale-110 hover:text-indigo-500 duration-300"
-            size="2x"
           />
         </Link>
       </div>
@@ -58,7 +54,6 @@ function Socials() {
             icon={faGithub}
             className="mb-3 hover:-translate-y-1
       hover:scale-110 hover:text-indigo-500 duration-300"
-            size="2x"
           />
         </Link>
         <Link href="https://www.youtube.com/michaelwhitedev" target="_blank">
@@ -66,7 +61,6 @@ function Socials() {
             icon={faYoutube}
             className="mb-3 hover:-translate-y-1
       hover:scale-110 hover:text-indigo-500 duration-300"
-            size="2x"
           />
         </Link>
         <Link href="https://twitter.com/Th3MichaelWhite" target="_blank">
@@ -74,7 +68,6 @@ function Socials() {
             icon={faTwitter}
             className="mb-3 hover:-translate-y-1
       hover:scale-110 hover:text-indigo-500 duration-300"
-            size="2x"
           />
         </Link>
         <Link
@@ -84,8 +77,7 @@ function Socials() {
           <FontAwesomeIcon
             icon={faLinkedin}
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300"
-            size="2x"
+      hover:scale-110 hover:text-indigo-500 duration-300 icon"
           />
         </Link>
       </div>
