@@ -3,7 +3,7 @@ import useMobile from "./mobile";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function About({ me2, me }) {
+export default function About() {
   const isMobile = useMobile();
 
   return (

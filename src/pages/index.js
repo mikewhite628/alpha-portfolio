@@ -1,6 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
 
-import Layout from "../components/layout";
 import About from "../components/about";
 import Services from "../components/services";
 import Portfolio from "../components/portfolio";
@@ -8,16 +8,34 @@ import Hero from "../components/hero";
 import Contact from "../components/contact";
 import Socials from "../components/socials";
 
-import logo from "../../public/logo.svg";
 import me from "../../public/me1.webp";
 import me2 from "../../public/me2.webp";
 import projectOne from "../../public/ai-app.svg";
 import projectTwo from "../../public/league-app2.svg";
 import projectThree from "../../public/c2c-guy.svg";
+import Header from "@/components/header";
+import Head from "next/head";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-export default function IndexPage({ data }) {
+export default function IndexPage() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <Layout logo={logo}>
+    <div>
+      <Head>
+        <meta charSet="utf-8" />
+        <title>Michael White</title>
+        <link rel="Portfolio" href="http://michaelwhite.dev" />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href="../src/images/logo.svg"
+          sizes="16x16"
+        />
+      </Head>
+      <Header />
       <Hero me={me} />
       <About me2={me2} me={me} />
       <Services />
@@ -28,6 +46,15 @@ export default function IndexPage({ data }) {
       />
       <Contact />
       <Socials />
-    </Layout>
+      <footer
+        style={{
+          marginTop: `2rem`,
+          textAlign: "center",
+        }}
+        className="text-white"
+      >
+        © {new Date().getFullYear()} Michael White
+      </footer>
+    </div>
   );
 }

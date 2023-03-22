@@ -4,7 +4,7 @@ import useMobile from "./mobile";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Header = ({ logo }) => {
+export const Header = () => {
   const isMobile = useMobile();
 
   return !isMobile ? (
@@ -14,7 +14,7 @@ export const Header = ({ logo }) => {
       <div className="flex justify-between items-center ">
         <Link href="/" className="self-center">
           <Image
-            src={logo}
+            src={`/logo.svg`}
             alt="logo"
             height={40}
             width={40}
@@ -69,9 +69,10 @@ export const Header = ({ logo }) => {
       <nav role="navigation" className="flex justify-between">
         <Link href="/" className="self-center">
           <Image
-            src={logo}
+            src={`/logo.svg`}
             alt="logo"
-            style={{ maxWidth: "40px", maxHeight: "40px" }}
+            width={40}
+            height={40}
             className="ml-3 self-center"
           />
         </Link>

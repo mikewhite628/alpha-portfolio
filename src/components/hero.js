@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
-export default function Hero({ me }) {
+export default function Hero() {
   return (
     <div className="about-container bg-zinc-800 px-12 sm:px-24">
       <div className="about-section flex flex-row justify-between about-inner mx-auto">
