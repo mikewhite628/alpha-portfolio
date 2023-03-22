@@ -11,7 +11,7 @@ import {
 function Socials() {
   return (
     <div>
-      <div className="social-icons transition ease-in-out delay-150 text-white">
+      {/* <div className="social-icons transition ease-in-out delay-150 text-white">
         <Link href="https://github.com/mikewhite628" target="_blank">
           <FontAwesomeIcon
             icon={faGithub}
@@ -80,7 +80,7 @@ function Socials() {
       hover:scale-110 hover:text-indigo-500 duration-300 icon"
           />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
