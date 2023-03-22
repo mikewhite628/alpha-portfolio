@@ -1,47 +1,53 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faGithub,
-//   faTwitter,
-//   faLinkedin,
-//   faYoutube,
-// } from "@fortawesome/free-brands-svg-icons";
 
 function Socials() {
   return (
     <div>
-      {/* <div className="social-icons transition ease-in-out delay-150 text-white">
+      <div className="social-icons transition ease-in-out delay-150 text-white">
         <Link href="https://github.com/mikewhite628" target="_blank">
-          <FontAwesomeIcon
-            icon={faGithub}
+          <Image
+            src={`/github.svg`}
+            alt="github"
+            width={24}
+            height={24}
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300 icon"
+      icon"
           />
         </Link>
 
         <Link href="https://www.youtube.com/michaelwhitedev" target="_blank">
-          <FontAwesomeIcon
-            icon={faYoutube}
+          <Image
+            width={24}
+            height={24}
+            src={`/youtube.svg`}
+            alt="youtube"
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300"
+      icon"
           />
         </Link>
         <Link href="https://twitter.com/Th3MichaelWhite" target="_blank">
-          <FontAwesomeIcon
-            icon={faTwitter}
+          <Image
+            width={24}
+            height={24}
+            src={`/twitter.svg`}
+            alt="twitter"
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300"
+      icon"
           />
         </Link>
         <Link
           href="https://www.linkedin.com/in/th3michaelwhite/"
           target="_blank"
         >
-          <FontAwesomeIcon
-            icon={faLinkedin}
+          <Image
+            width={24}
+            height={24}
+            src={`/linkedin.svg`}
+            alt="linkedin"
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300"
+      icon"
           />
         </Link>
       </div>
@@ -50,37 +56,49 @@ function Socials() {
           href="https://github.com/mikewhite628?tab=repositories"
           target="_blank"
         >
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300"
+          <Image
+            width={24}
+            height={24}
+            src={`/github.svg`}
+            alt="github"
+            className="mb-3 hover:-translate-y-1 
+    icon"
           />
         </Link>
         <Link href="https://www.youtube.com/michaelwhitedev" target="_blank">
-          <FontAwesomeIcon
-            icon={faYoutube}
+          <Image
+            width={24}
+            height={24}
+            src={`/youtube.svg`}
+            alt="youtube"
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300"
+       icon"
           />
         </Link>
         <Link href="https://twitter.com/Th3MichaelWhite" target="_blank">
-          <FontAwesomeIcon
-            icon={faTwitter}
+          <Image
+            width={24}
+            height={24}
+            src={`/twitter.svg`}
+            alt="twitter"
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300"
+    icon"
           />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/th3michaelwhite/"
+          href="https://www.linkedin.com/in/th3michaelwhite/ icon"
           target="_blank"
         >
-          <FontAwesomeIcon
-            icon={faLinkedin}
+          <Image
+            width={24}
+            height={24}
+            src={`/linkedin.svg`}
+            alt="linkedin"
             className="mb-3 hover:-translate-y-1
-      hover:scale-110 hover:text-indigo-500 duration-300 icon"
+    icon"
           />
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 }
