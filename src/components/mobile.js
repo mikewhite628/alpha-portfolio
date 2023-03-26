@@ -12,7 +12,6 @@ export default function useMobile() {
       } else {
         setIsMobile(true);
       }
-      console.log(isMobile);
     }
   };
 
