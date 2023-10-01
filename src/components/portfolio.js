@@ -15,7 +15,7 @@ function Portfolio() {
         Portfolio
       </h1>
       <div className=" mx-auto flex flex-col">
-        <div
+        {/* <div
           className="sm:mx-6 mb-12 flex flex-row-reverse items-center justify-center flex-wrap-reverse"
           data-aos="fade-up"
           data-aos-duration="500"
@@ -68,9 +68,9 @@ function Portfolio() {
               width={384}
             />
           </div>
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           className="sm:mx-6 mb-12 flex flex-row-reverse items-center justify-center flex-wrap-reverse"
           data-aos="fade-up"
           data-aos-duration="500"
@@ -123,7 +123,7 @@ function Portfolio() {
               width={384}
             />
           </div>
-        </div>
+        </div> */}
 
         <div
           className="sm:mx-6 mb-12 flex flex-row-reverse items-center justify-center flex-wrap-reverse"
