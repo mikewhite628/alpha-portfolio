@@ -6,7 +6,7 @@ function Socials() {
   return (
     <div>
       <div className="social-icons transition ease-in-out delay-150 text-white">
-        <Link href="https://github.com/mikewhite628" target="_blank">
+        {/* <Link href="https://github.com/mikewhite628" target="_blank">
           <Image
             src={`/github.svg`}
             alt="github"
@@ -15,7 +15,7 @@ function Socials() {
             className="mb-3 hover:-translate-y-1
       icon"
           />
-        </Link>
+        </Link> */}
 
         <Link href="https://www.youtube.com/michaelwhitedev" target="_blank">
           <Image

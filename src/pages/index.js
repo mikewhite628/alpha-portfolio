@@ -23,7 +23,7 @@ export default function IndexPage() {
     AOS.init();
   }, []);
   return (
-    <div>
+    <>
       <Head>
         <meta charSet="utf-8" />
         <title>Michael White</title>
@@ -31,30 +31,32 @@ export default function IndexPage() {
         <link
           rel="icon"
           type="image/svg+xml"
-          href="../src/images/logo.svg"
+          href="/favicon.ico.png"
           sizes="16x16"
         />
       </Head>
-      <Header />
-      <Hero me={me} />
-      <About me2={me2} me={me} />
-      <Services />
-      <Portfolio
-        projectOne={projectOne}
-        projectTwo={projectTwo}
-        projectThree={projectThree}
-      />
-      <Contact />
-      <Socials />
-      <footer
-        style={{
-          marginTop: `2rem`,
-          textAlign: "center",
-        }}
-        className="text-white"
-      >
-        © {new Date().getFullYear()} Michael White
-      </footer>
-    </div>
+      <div>
+        <Header />
+        <Hero me={me} />
+        <About me2={me2} me={me} />
+        <Services />
+        <Portfolio
+          projectOne={projectOne}
+          projectTwo={projectTwo}
+          projectThree={projectThree}
+        />
+        <Contact />
+        <Socials />
+        <footer
+          style={{
+            marginTop: `2rem`,
+            textAlign: "center",
+          }}
+          className="text-white"
+        >
+          © {new Date().getFullYear()} Michael White
+        </footer>
+      </div>
+    </>
   );
 }
